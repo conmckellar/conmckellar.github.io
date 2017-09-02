@@ -8,18 +8,117 @@
 
   </head>
 
-  <body>
+  <body background= "./assets/images/parchment.jpg">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" href="./assets/javascript/app.js"></script>
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
 
-    <h1>Quest for the Holy Grail</h1>
+    <div id= startBox>
 
-    <p>Sir [Insert Name Here]! You must answer the wizard's questions to cross the Bridge of Death and obtain the Holy Grail, but your time is limited! Wrong answers will be your doom!</p>
+      <h1 class= "logo">Quest for the Holy Grail</h1>
 
-    <h3>What... is your title?</h3>
-    <h3>What... is your quest?</h3>
-    <h3>What... is your favorite color?</h3>
+      <br>
+      <p><b>I beseech you, Sir/Lady! Pass the Quizard Wizard's test to cross the Bridge of Death and obtain the Holy Grail! You must answer his questions correctly, but your time is limited! More than one wrong answer or failing to answer within forty seconds will surely be your doom!</b></p>
+      </br>
 
+      <button id= startButton>Begin!</button>
+    </div>
+
+    <div id= questionsBox>
+
+      <h1 class= "logo">Swift be your Mind!</h1>
+
+      <h2 id= "timer">Time Remaining: <span id = "timerNumber">40 Seconds</span></h2>
+
+      <br>
+      <h4><b>"IF THE GRAIL YOU WISH TO SEE, THEN YOU MUST ANSWER THESE QUESTIONS THREE!"</b></h4>
+      <br>
+
+      <h3>1. What... is your title???</h3>
+        <input type="radio" name="q1" value="Duke">Duke/Duchess
+        <input type="radio" name="q1" value="Sir">Sir/Lady 
+        <input type="radio" name="q1" value="Prince">Prince/Princess
+        <input type="radio" name="q1" value="Queen">King/Queen 
+        
+
+      <h3>2. What... is your quest???</h3>
+        <input type="radio" name="q2" value="To purchase spam">To purchase spam!
+        <input type="radio" name="q2" value="To become a knight who says NEE!">To become a knight who says NEE! 
+        <input type="radio" name="q2" value="To seek the Holy Grail">To seek the Holy Grail!
+        <input type="radio" name="q2" value="To welease Bwian">To welease Bwian!
+
+
+
+      <h3>3. What... is your favorite color???</h3>
+        <input type="radio" name="q3" value="favorite color">[Insert Your Favorite Color Here]
+        <input type="radio" name="q3" value="not favorite color">[Your Favorite Color Not Here]
+        <input type="radio" name="q3" value="Screech">[Screech Barbarically]
+        <input type="radio" name="q3" value="What?">What is a color?
+
+        <br>
+        <h4><b>"YOU THOUGHT YOU WERE FINISHED? FOOL! THE TEST HAS ONLY JUST BEGUN!"</b></h4>
+        <br>
+
+      <h3>4. What... is the name of King Arthur's Sword???</h3>
+        <input type="radio" name="q4" value="Zweihander">Zweihander
+        <input type="radio" name="q4" value="Murasama">Murasama
+        <input type="radio" name="q4" value="Caladbolg">Caladbolg
+        <input type="radio" name="q4" value="Stone">The Sword in the Stone
+        <input type="radio" name="q4" value="Excalibur">Excalibur 
+
+
+      <h3>5. What... is the name of the knight who found the Holy Grail before you???</h3>
+        <input type="radio" name="q5" value="Arthur">Arthur
+        <input type="radio" name="q5" value="Lancelot">Lancelot
+        <input type="radio" name="q5" value="Galahad">Galahad
+        <input type="radio" name="q5" value="Mordred">Mordred
+        <input type="radio" name="q5" value="Merlin">Merlin
+      
+      <h3>6. What... is the average cruising airspeed velocity of an unladen European Swallow???</h3>
+        <input type="radio" name="q6" value="24">24 mph
+        <input type="radio" name="q6" value="18">18 mph
+        <input type="radio" name="q6" value="32">32 mph
+        <input type="radio" name="q6" value="40">40 mph
+
+        <br>
+        <br>
+
+      <button id= "finished">Finished!</button>
+
+    </div>
+
+
+    <div id= "endBox">
+
+      <h1 class= "logo">Quest for the Holy Grail</h1>
+      
+      <h1 id= "done">The Test has Concluded! Your fate is...</h1>
+      <br>
+
+      <h2>Correct: <span id= "correct">0</span></h2>
+      <h2>Incorrect: <span id= "wrong">0</span></h2>
+      <h2>Unanswered: <span id= "unanswered">0</span></h2>
+
+      <div id= "victory">
+      
+      <div>
+        <img src="./assets/images/HOLY-GRAIL.jpg" alt="You've already got one!" style="width:250px;height:200px;">
+      </div>
+
+      <div>
+        <h1>THE GRAIL IS YOURS</h1>
+      </div>
+
+      <div>
+        <img src="./assets/images/Rejoicing.gif" alt="Much of it!">
+      </div>
+
+    </div>
+
+    <div id= "failure">
+      <h1>DISHONOR! You must answer FIVE questions correctly!</h1>
+    </div>
+
+    </div>
 
   </body>
 
