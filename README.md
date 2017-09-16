@@ -1,1 +1,1 @@
-# TriviaGame
+# Giphy-API-HW
