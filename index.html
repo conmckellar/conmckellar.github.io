@@ -1,90 +1,309 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
   <head>
-    <meta charset="UTF-8">
-    <title>TrainSpotter</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Firebase Reference -->
-    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-    <!-- Moment.js Reference -->
-    <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Connor's Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
   </head>
+
   <body>
-    <!--Train tracker-->
-<div class ="container">
-<!--Jumbotron-->
-<div class="jumbotron" style="background: navy">
-  <h1 class="text-center" style="color: white">Train Spotter</h1>
-  <h3 class="text-center" style="color: white">Train Schedule Simulator</h3>
-</div>
-<div class="row">
-    <div class="col-lg-12">
-    <!--Current Train Schedule-->
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title current"><strong>Current Train Schedule</strong></h3>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+          <i class="fa fa-times"></i>
+        </a>
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#top">Click on a section!</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#top">To the Top</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#services">Personal Projects</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#portfolio">Team Projects</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="text-vertical-center">
+        <h1>Welcome to Connor McKellar's Portfolio!</h1>
+          <div class="row">
+
+            <div class="col-lg-2">
+              <img class="img-me img-fluid" src="img/me-2017.jpg" height="153" width="183.6">
+            </div>
+            <div class="col-lg-9">
+              <h3><strong>Connor McKellar</strong> is a full-stack developer with a passion for cyber security. He is a driven individual with fresh ideas and skills fit for the wide new world of technology and computer science! See some of his work below.</h3>
+              <br>
+              <h3>He also enjoys coffee! No cream, no sugar.</h3>
+            </div>
+            <div class="col-lg-1">
+            </div>
+
+          </div>
+        <br>
+        <a href="#about" class="btn btn-dark btn-lg js-scroll-trigger">Find Out More</a>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container text-center">
+        <h2>Connor McKellar has created several applications as a student of The Coding Bootcamp at UCSD Extention.</h2>
+        <p class="lead">He uses GitHub and Heroku as repositories so you can check them out for yourself!</p>
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Samples -->
+    <section id="services" class="services bg-primary text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-10 mx-auto">
+            <h2>Samples of Connor's Work</h2>
+            <hr class="small">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-shopping-cart fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Bamazon</strong>
+                  </h4>
+                  <p>An online shopping simulator! Buy listed products on stock with play money!</p>
+                  <a href="https://github.com/conmckellar/bamazon.git" class="btn btn-light">Learn More</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-train fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Trainspotter</strong>
+                  </h4>
+                  <p>Create your own train schedules with arrivals updated in realtime!</p>
+                  <a href="https://github.com/conmckellar/HW-TrainSchedule.git" class="btn btn-light">Learn More</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-microchip fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>LIRI Bot</strong>
+                  </h4>
+                  <p>A personal assistent that gives you information about songs, movies, and even tweets!</p>
+                  <a href="https://github.com/conmckellar/LIRI-Bot.git" class="btn btn-light">Learn More</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-hand-pointer-o fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Clicky Game</strong>
+                  </h4>
+                  <p>Test your memory by playing this picture-clicker game! Try for all 12 points!</p>
+                  <a href="https://github.com/conmckellar/clicky-game.git" class="btn btn-light">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <!-- /.row (nested) -->
+          </div>
+          <!-- /.col-lg-10 -->
         </div>
-        <div class="panel-body">
-          <table class="table table-hover" id='trainTable'>
-            <thead>
-              <tr>
-                <th>Train Name</th>
-                <th>Destination</th>
-                <th>Next Arrival</th>
-                <th>Frequency(minutes)</th>
-                <th>Minutes Away</th>
-              </tr>
-            </thead>
-            <tbody>
-              
-            </tbody>
-          </table>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+      <div class="text-vertical-center">
+        <h1>And This is Only the Beginning</h1>
+      </div>
+    </aside>
+
+    <!-- Teamup -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2>Team Projects</h2>
+            <hr class="small">
+            <div class="row">
+
+
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="https://vidman22.github.io/Boot_Coin/">
+                    <img class="img-portfolio img-fluid" src="img/bitcoin-1.jpg">
+                  </a>
+                </div>
+                <div>
+                  <p><strong>Bootcoin:</strong> An American to Korean crypto-currency tracker.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="https://triviablitz.herokuapp.com/">
+                    <img class="img-portfolio img-fluid" src="img/color-wheel.jpg">
+                  </a>
+                </div>
+                <div>
+                  <p><strong>Trivia Blitz:</strong> API-powered trivia game with two different game modes. Test your knowledge!</p>
+                </div>
+              </div>
+            
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="https://boiling-anchorage-22780.herokuapp.com/">
+                    <img class="img-portfolio img-fluid" src="img/airplane.png">
+                  </a>
+                </div>
+                <div>
+                  <p><strong>ESC Flights:</strong> Dynamic air travel search application built in ReactJS.</p>
+                </div>
+              </div>
+            <!--
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#">
+                    <img class="img-portfolio img-fluid" src="img/portfolio-4.jpg">
+                  </a>
+                </div>
+              </div>
+            -->
+
+
+            </div>
+            <!-- /.row (nested) -->
+            <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
+          </div>
+          <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary text-white">
+      <div class="container text-center">
+        <h3>Look at these buttons! They compel you to click!</h3>
+        <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+        <a href="#contact" class="btn btn-lg btn-dark">Find me!</a>
+      </div>
+    </aside>
+
+    <!-- Map -->
+    <section id="contact" class="map">
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBH6A6ieNWBGX6NWR6YTJLtTU5ie9Wdp2Y&q=UCSD+Extension,Greenwich+Drive,+CA"></iframe>
+      <br/>
+      <small>
+        <a href="https://www.google.com/maps/embed/v1/place?key=AIzaSyBH6A6ieNWBGX6NWR6YTJLtTU5ie9Wdp2Y&q=UCSD+Extension,Greenwich+Drive,+CA"></a>
+      </small>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h4>
+              <strong>Contact</strong>
+            </h4>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa fa-phone fa-fw"></i>
+                (858) 703-7569</li>
+              <li>
+                <i class="fa fa-envelope-o fa-fw"></i>
+                <a href="mailto:conmckellar@gmail.com">conmckellar@gmail.com</a>
+              </li>
+            </ul>
+            <br>
+
+            <!--
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-dribbble fa-fw fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+            -->
+
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Connor Sheppard McKellar 2017</p>
+          </div>
         </div>
       </div>
+      <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+      </a>
+    </footer>
 
-      <!-- Add Trains  -->
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title add"><strong>Add Trains</strong></h3>
-        </div>
-        <div class="panel-body">
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Entry Form -->
-        <form>
-          <div class="form-group">
-            <label for="">Train Name</label>
-            <input type="text" class="form-control" id="trainInput">
-          </div>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-          <div class="form-group">
-            <label for="">Destination</label>
-            <input type="text" class="form-control" id="desInput">
-          </div>
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
 
-          <div class="form-group">
-            <label for="">First Train Time (HH:mm - military time)</label>
-            <input type="text" class="form-control" id="timeInput">
-          </div>
-
-          <div class="form-group">
-            <label for="">Frequency (min)</label>
-            <input type="text" class="form-control" id="freqInput">
-          </div>
-          
-          <button type="submit" class="btn btn-primary" id="addTrainBtn">Submit</button>
-        </form>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-    <!-- JavaScript -->
-    <script src="javascript.js"></script>
   </body>
+
 </html>
