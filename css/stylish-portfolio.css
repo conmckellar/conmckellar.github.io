@@ -193,6 +193,7 @@ hr.small {
 
 .services {
   padding: 50px 0;
+  background-color: orange;
 }
 
 .service-item {
@@ -243,6 +244,7 @@ hr.small {
 
 .call-to-action {
   padding: 50px 0;
+  background-color: orange;
 }
 
 .call-to-action .btn {
